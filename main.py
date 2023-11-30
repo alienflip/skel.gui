@@ -68,17 +68,14 @@ while True:
         current_tab = int(values[1][4:])
     if event == 'exec_op':
         output = _ops.test_op([1,2,3])
-        print("operation output: ", output)
     if event == 'exec_test':
         output = _ops.test_op([1,2,3])
         _test.test_op(output)
     if event == "save":
         path = 'save_load/' + str(values['target_' + str(current_tab)])
         _utils.save(path , str(values['slide_' + str(current_tab)]))
-        print("file saved to: " + path)
     if event == "load":
         path = 'save_load/' + values['target_' + str(current_tab)]
         _utils.load(path)
-        print("file loaded from: " + path)
         
 window.close()

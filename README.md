@@ -23,6 +23,6 @@ chmod a+x *.sh
 ./run.sh
 ```
 
-## create desktop app
+## create executable
 
 > follow [`create_exec`](./create_exec.md)

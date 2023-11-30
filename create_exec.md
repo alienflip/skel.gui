@@ -11,13 +11,5 @@ this repo explains how to create a desktop executable and application shortcut f
 ## use
 
 ```
-cp example.skel.desktop skel.desktop
+./main.bin
 ```
-
-> edit `skel.desktop` to match your `user` path
-
-```
-cp skel.desktop ~/Desktop
-```
-
-> right click on skel, and select `Allow Launching`

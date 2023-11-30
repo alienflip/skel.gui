@@ -5,4 +5,6 @@ class operations_class:
         pass
 
     def test_op(self, data):
-        return _test_op(data)
+        output = _test_op(data)
+        print("operation output: ", output)
+        return output
