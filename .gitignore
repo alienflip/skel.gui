@@ -1,2 +1,6 @@
 __py*
 .secret.env
+
+main.build
+main.bin
+skel.desktop

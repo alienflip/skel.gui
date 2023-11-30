@@ -1,5 +1,5 @@
 import PySimpleGUI as sg
-from tabs import tabs
+from UI.tabs import tabs
 
 class layout:
     def __init__(self, menu, radio):

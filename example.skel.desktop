@@ -3,7 +3,7 @@
 Version=1.0
 Type=Application
 Terminal=false
-Exec=/home/<user>/skel.gui/executable/main.bin
+Exec=/<YOUR_PATH>/skel.gui/main.bin
 Name=skel
 Comment=skel
-Icon=/home/<user>/skel.gui/cog.png
+Icon=/<YOUR_PATH>/skel.gui/cog.png

@@ -5,9 +5,9 @@ import PySimpleGUI as sg
 from utils.utils import utils_class
 from operation.operation import operations_class
 from tests.test import test_class
-from tab import tab
-from tabs import tabs
-from layout import layout
+from UI.tab import tab
+from UI.tabs import tabs
+from UI.layout import layout
 
 dotenv_path = join(dirname(__file__), '.secret.env')
 load_dotenv(dotenv_path)
@@ -55,7 +55,6 @@ for i in range(TAB_COUNT):
 to = [_tabs.get()]
 _layout.add_tabs(to)
 
-# add layout to window
 taskbar_icon = base64.b64encode(open(r'cog.png', 'rb').read())
 window = sg.Window('skel.gui', _layout.layout, resizable=True, size=(1000, 700), icon=taskbar_icon, finalize=True)
 
@@ -63,10 +62,10 @@ window = sg.Window('skel.gui', _layout.layout, resizable=True, size=(1000, 700),
 current_tab = 0
 while True:
     event, values = window.read()
-    if values:
-        current_tab = int(values[1][4:])
     if event == sg.WIN_CLOSED or event == 'Cancel':
         break
+    if values:
+        current_tab = int(values[1][4:])
     if event == 'exec_op':
         output = _ops.test_op([1,2,3])
         print("operation output: ", output)
