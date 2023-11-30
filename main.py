@@ -9,7 +9,7 @@ from tab import tab
 from tabs import tabs
 from layout import layout
 
-dotenv_path = join(dirname(__file__), '.env')
+dotenv_path = join(dirname(__file__), '.secret.env')
 load_dotenv(dotenv_path)
 
 TAB_COUNT = int(os.environ.get("TAB_COUNT"))

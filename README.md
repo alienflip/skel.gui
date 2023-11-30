@@ -1,8 +1,14 @@
-# py.exec
+# skel.gui
 
 ## abstract
 
-a GUI which easily allows for general python files to plugin
+plugin GUI
+
+## dependencies
+
+```
+cp .env .secret.env
+```
 
 ## install
 
