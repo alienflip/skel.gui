@@ -5,7 +5,7 @@ class tabs:
         self.tabs = [] 
 
     def get(self):
-        group = sg.TabGroup([self.tabs])
+        return [sg.TabGroup([self.tabs])]
 
     def add_tab(self, _name, _tab):
-        self.tabs.append(sg.Tab(_name, _tab.get()))
+        self.tabs.append(sg.Tab(_name, _tab))
