@@ -1,2 +1,2 @@
 sudo apt-get install python3.8-tk
-pip3 install pysimplegui
+pip3 install pysimplegui python-dotenv
