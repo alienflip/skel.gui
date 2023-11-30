@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Exec=/home/<user>/skel.gui/executable/main.bin
+Name=skel
+Comment=skel
+Icon=/home/<user>/skel.gui/cog.png
