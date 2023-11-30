@@ -43,6 +43,7 @@ for i in range(TAB_COUNT):
     new_tab = tab()
     new_tab.add_button(_name='press', _key='press_' + str(i))
     new_tab.add_slider(_range=(0, 100), _orientation='h', _size=(20, 20), _default_value=0, _key='slide_' + str(i))
+    new_tab.add_taget(_key='target_' + str(i))
     i_tabs.append(new_tab)
 
 # add tabs to tab group layout
